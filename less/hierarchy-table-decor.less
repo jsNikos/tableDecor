@@ -1,0 +1,34 @@
+@import 'table-decor.less';
+
+.hierarchy-table-decor .fixed-columns .level-container,
+.hierarchy-table-decor .fixed-footer-cells .level-container{
+	text-align: right;
+}
+
+.hierarchy-table-decor .tableCell .content{
+	background-image: none;
+	background-color: transparent;
+}
+
+.hierarchy-table-decor .tableCell{
+	.linear-gradient-top-bottom(#e8e8e8, #d6d6d6);
+}
+
+.hierarchy-table-decor .fixed-cells .tableCell,
+.hierarchy-table-decor .fixed-footer-cells .tableCell{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	float: none;	
+}
+
+.hierarchy-table-decor .fixed-cells .tableCell .content:hover,
+.hierarchy-table-decor .columns .tableCell .content:hover{
+	.linear-gradient-top-bottom(darken(#e8e8e8, 20), darken(#d6d6d6, 20));
+	cursor: pointer;
+}
+
+.hierarchy-table-decor .fixed-cells > .row > .tableCell{
+	left: 0px;
+	right: auto;	
+}
